@@ -1,0 +1,167 @@
+<?php 
+/********************************************
+ * @Created on March, 2011 * @Package: Ndotdeals unlimited v2.2
+ * @Author: NDOT
+ * @URL : http://www.NDOT.in
+ ********************************************/
+?>
+<div class="category mb15 ">
+	<div class="great_top"><h1>Categories</h1></div>
+    <div class="cate_middle">
+    	<ul>
+        	<li>
+            	<a class="cate_menu" href="<?php echo DOCROOT;?>hot-deals.html">
+                	<span class="cate">All</span>
+                </a>
+            </li>
+            <li>
+            	<a class="cate_menu" href="<?php echo DOCROOT;?>deals/category/food_22.html">
+                	<span class="cate1">Food & Drink</span>
+                </a>
+            </li>
+            <li>
+            	<a class="cate_menu" href="<?php echo DOCROOT;?>deals/category/fitness_23.html">
+                	<span class="cate2">Fitness & Wellness</span>
+                </a>
+            </li>
+            <li>
+            	<a class="cate_menu" href="<?php echo DOCROOT;?>deals/category/retail_24.html">
+                	<span class="cate3">Retail & Services</span>
+                </a>
+            </li>
+            <li>
+            	<a class="cate_menu" href="<?php echo DOCROOT;?>deals/category/salon_25.html">
+                	<span class="cate4">Salon & Spa</span>
+                </a>
+            </li>
+            <li>
+            	<a class="cate_menu" href="<?php echo DOCROOT;?>deals/category/electronics_4.html">
+                	<span class="cate5">Electronics</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<?php 
+
+//category list
+/*if(CATEGORY == 1)
+{
+	if(file_exists(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/category_list.php'))
+	{
+		require_once(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/category_list.php');
+	}
+	else
+	{
+		require_once(DOCUMENT_ROOT.'/themes/_base_theme/common/category_list.php');
+	}
+
+}
+*/
+//side bar system/plugins//featured deals
+if(FEATURED_DEAL == 1)
+{
+	if(file_exists(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/random_coupon.php'))
+	{
+		require_once(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/random_coupon.php');
+	}
+	else
+	{
+		require_once(DOCUMENT_ROOT.'/themes/_base_theme/common/random_coupon.php');
+	}
+	
+}
+
+
+
+//refer friends
+require_once(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/refer_friends_side.php');
+//newsletter
+if(NEWSLETTER == 1)
+{
+	if(file_exists(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/subscriber.php'))
+	{
+		require_once(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/subscriber.php');
+	}
+	else
+	{
+		require_once(DOCUMENT_ROOT.'/themes/_base_theme/common/subscriber.php');
+	}
+
+}
+
+
+//mobile subscribe
+if(MOBILE_SUBSCRIPTION == 1)
+{
+	if(file_exists(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/sms_subscriber.php'))
+	{
+		require_once(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/sms_subscriber.php');
+	}
+	else
+	{
+		require_once(DOCUMENT_ROOT.'/themes/_base_theme/common/sms_subscriber.php');
+	}
+	
+}
+
+
+//fan page
+if(FANPAGE == 1)
+{
+	if(file_exists(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/facebook_fanpage.php'))
+	{
+		require_once(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/facebook_fanpage.php');
+	}
+	else
+	{
+		require_once(DOCUMENT_ROOT.'/themes/_base_theme/common/facebook_fanpage.php');
+	}
+	
+}
+
+//Twitter search  list
+if(TWEETS_AROUND_CITY == 1)
+{
+	if(file_exists(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/twitter_around.php'))
+	{
+		require_once(DOCUMENT_ROOT.'/themes/'.CURRENT_THEME.'/common/twitter_around.php');
+	}
+	else
+	{
+		require_once(DOCUMENT_ROOT.'/themes/_base_theme/common/twitter_around.php');
+	}
+	
+}
+
+?>
+
+   <div class="featured_business">
+   		<div class="great_top"><h1>Feature Your Business</h1></div>
+        <div class="featured_mid">
+    <a href="<?php echo DOCROOT;?>business.html"><img class="fl" src="<?php echo DOCROOT;?>themes/<?php echo CURRENT_THEME; ?>/images/feature.png" /></a>
+    <p>Learn how NDOT DEALS can drive lots of customers to your door, risk free!<a style="font:bold 12px arial;color:#000;margin-left:5px;text-decoration:underline;" href="<?php echo DOCROOT;?>business.html">Find out how!</a></p>
+    </div>
+    <div class="featured_bottom"></div>
+    
+    </div>   
+      
+    <div class="visit_mobile"> 
+    <div class="great_top"><h1>Visit us on your Mobile</h1></div>
+    <div class="visit_center">
+    <a class="visit_mid" href="<?php echo DOCROOT;?>access/mobile"></a>
+    </div>
+    </div>    
+    
+    
+     <!--
+     <div class="featured">
+     <div class="great_top"><h1>Featured On</h1></div>
+     <div class="great_center">
+      <a href="<?php echo DOCROOT;?>referral.html">
+      <img style="margin-left:17px;" class="fl" src="<?php echo DOCROOT;?>themes/<?php echo CURRENT_THEME; ?>/images/featured_mid.png" /></a>
+      </div>
+      <div class="great_bottom"></div>
+      </div>                        -->
